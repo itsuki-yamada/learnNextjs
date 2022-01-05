@@ -11,5 +11,5 @@
       1. [.prettierrc.js](SettingNextjsLib/.prettierrc.js)を設定
    4. `touch .prettierignore`
       1. [.prettierignore](SettingNextjsLib/.prettierignore)を設定
-5. material-ui設定
+5. material-ui設定([example](https://github.com/mui-org/material-ui/tree/master/examples/nextjs))
    1. `npm i @mui/material`
