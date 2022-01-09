@@ -20,6 +20,10 @@
   color: rgb(112, 76, 182);
 }
 
+.ul {
+  list-style: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .logo {
     animation: logo-float infinite 3s ease-in-out;
