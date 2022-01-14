@@ -17,3 +17,5 @@
       1. [.prettierignore](SettingNextjsLib/.prettierignore)を設定
 6. material-ui設定([example](https://github.com/mui-org/material-ui/tree/master/examples/nextjs))
    1. `npm i @mui/material`
+      1. material ui をimportして使うときの注意点
+         1. [バンドルサイズ](https://mui.com/components/icons/#:~:text=The%20safest%20for%20bundle%20size%20is%20Option%201%2C%20but%20some%20developers%20prefer%20Option%202.%20Make%20sure%20you%20follow%20the%20minimizing%20bundle%20size%20guide%20before%20using%20the%20second%20approach.)
