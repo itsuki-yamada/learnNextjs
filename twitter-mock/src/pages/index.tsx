@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
-import Layout from "../components/layout/layout";
+import { Layout } from "../components/layout/layout";
+import { TweetInput } from "../components/form/TweetInput";
 
+const pageName = 'HOME';
 const IndexPage: NextPage = () => {
   return (
-    <Layout>
-      <h1>
-        TwitterMockApp!
-      </h1>
+    <Layout pageName={pageName}>
+      <TweetInput/>
     </Layout>
   )
 }

@@ -7,7 +7,12 @@ import PersonIcon from "@mui/icons-material/Person";
 import MapsUgcIcon from "@mui/icons-material/MapsUgc";
 import React from "react";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+type Props = {
+  children: React.ReactNode,
+  pageName: string,
+}
+
+export function Layout({ children, pageName }: Props) {
   return (
     <div className={styles.container}>
       <Head>
@@ -21,7 +26,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <PersonIcon/>
         <MapsUgcIcon/>
       </header>
-      {children}
+      <main>
+        <h1>{pageName}</h1>
+        {children}
+      </main>
     </div>
   )
 }
