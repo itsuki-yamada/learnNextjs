@@ -1,23 +1,17 @@
-# Redux Toolkit TypeScript Example
+# TwitterMockApp
 
-This example shows how to integrate Next.js with [Redux Toolkit](https://redux-toolkit.js.org).
+## ディレクトリ構成
 
-The **Redux Toolkit** is a standardized way to write Redux logic (create actions and reducers, setup the store with some default middlewares like redux devtools extension). This example demonstrates each of these features with Next.js
+- src
+  - components/ : すべてのコンポーネントを管理する
+    - hooks/ : hooksを管理する
+    - model/ : モデルに紐づくコンポーネントを管理する(TweetやUserなど)
+    - page/ : pagesと1対1の関係
+    - ui/ : データに依存しない見た目のみのコンポーネントを管理する
+  - pages/ : ルーティングのみ、components/pageから対応するコンポーネントをimportして表示
+  - styles/ : globalCSSのみ管理する
 
-## Deploy your own
+### 参考リンク
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-redux&project-name=with-redux&repository-name=with-redux)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-redux with-redux-app
-# or
-yarn create next-app --example with-redux with-redux-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- [SPA Componentの推しディレクトリ構成について語る](https://zenn.dev/yoshiko/articles/99f8047555f700#%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E6%88%90)
+- [dailydotdev](https://github.com/dailydotdev/apps/tree/master/packages/webapp)
