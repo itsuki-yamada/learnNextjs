@@ -1,14 +1,14 @@
 import styles from './layout.module.css'
 import Head from "next/head";
 import React from "react";
-import { Header } from "./Header";
+import { Header } from "../header/Header";
 
 type Props = {
   children: React.ReactNode,
   pageName: string,
 }
 
-export function Layout({ children, pageName }: Props) {
+export function MainLayout({ children, pageName }: Props) {
   return (
     <div className={styles.container}>
       <Head>

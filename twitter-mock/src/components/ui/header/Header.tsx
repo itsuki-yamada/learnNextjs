@@ -1,4 +1,4 @@
-import styles from "./layout.module.css";
+import styles from "../layout/layout.module.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
@@ -12,14 +12,14 @@ import React from "react";
  * TODO: それぞれのアイコンに機能を実装する
  * @constructor
  */
-export function Header() {
+export const Header: React.VFC = () => {
   return (
     <header className={styles.header}>
       <TwitterIcon/>
       <HomeIcon/>
       <SearchIcon/>
       <PersonIcon/>
-      <MapsUgcIcon/>
+      <MapsUgcIcon color={'primary'}/>
     </header>
   )
 }
