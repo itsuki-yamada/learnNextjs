@@ -1,11 +1,7 @@
 import styles from './layout.module.css'
 import Head from "next/head";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import HomeIcon from "@mui/icons-material/Home";
-import SearchIcon from "@mui/icons-material/Search";
-import PersonIcon from "@mui/icons-material/Person";
-import MapsUgcIcon from "@mui/icons-material/MapsUgc";
 import React from "react";
+import { Header } from "./Header";
 
 type Props = {
   children: React.ReactNode,
@@ -19,13 +15,7 @@ export function Layout({ children, pageName }: Props) {
         <title>Redux Toolkit</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <header className={styles.header}>
-        <TwitterIcon/>
-        <HomeIcon/>
-        <SearchIcon/>
-        <PersonIcon/>
-        <MapsUgcIcon/>
-      </header>
+      <Header/>
       <main>
         <h1>{pageName}</h1>
         {children}
