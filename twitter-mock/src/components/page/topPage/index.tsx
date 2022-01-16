@@ -1,11 +1,13 @@
 import { InputTweet } from "../../model/tweet/inputTweet/InputTweet";
 import { VFC } from "react";
-import { TopPageLayout } from "./index.layout";
+import { MainLayout } from "../../ui/layout/MainLayout";
+
+const pageName = 'HOME';
 
 export const TopPage: VFC = () => {
   return (
-    <TopPageLayout>
+    <MainLayout pageName={pageName}>
       <InputTweet/>
-    </TopPageLayout>
+    </MainLayout>
   )
 }
