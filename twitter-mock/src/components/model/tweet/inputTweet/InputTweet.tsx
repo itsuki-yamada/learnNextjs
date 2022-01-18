@@ -29,7 +29,7 @@ export const InputTweet: VFC = function InputTweet() {
             </InputAdornment>
           }
           onChange={changeTweetText}
-          error={true}
+          error={tweetLen > tweetLenLimit}
         />
         <InputTextProgress limit={tweetLenLimit} currentLength={tweetLen}/>
         <Button>Tweet</Button>
