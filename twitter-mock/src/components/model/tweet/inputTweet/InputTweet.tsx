@@ -13,7 +13,7 @@ const tweetLenLimit = 10;
  * TODO: [] Tweetを登録する(hooks)
  * TODO: [] レイアウトをTwitterのように整える
  */
-export const InputTweet: VFC = () => {
+export const InputTweet: VFC = function InputTweet() {
   const [tweetLen, setTweetLen] = useState<number>(0);
   const changeTweetText = (e: ChangeEvent<HTMLTextAreaElement|HTMLInputElement>) => setTweetLen(e.target.value.length);
   return (
