@@ -1,6 +1,7 @@
 import React, { VFC } from "react";
 import { Box } from "@mui/system";
 import { CircularProgress, Typography } from "@mui/material";
+import styles from './inputTextProgress.module.css';
 
 type props = {
   limit: number,
@@ -8,7 +9,6 @@ type props = {
   size?: number
 }
 
-// TODO: cssを別ファイル管理に変更する
 export const InputTextProgress: VFC<props> = React.memo(
   function InputTextProgress({ limit, currentLength, size = 40 }) {
     const per = Math.round(currentLength / limit * 100);
@@ -23,32 +23,13 @@ export const InputTextProgress: VFC<props> = React.memo(
           width: `${size}px`
         }}>
           <CircularProgress
+            className={styles.circularProgress}
             variant={'determinate'}
             value={per > 100 ? 100 : per}
             color={isError ? 'error' : 'primary'}
             size='100%'
-            style={{
-              backgroundColor: 'lemonchiffon',
-              top: 0,
-              left: 0,
-              bottom: 0,
-              right: 0,
-              position: 'absolute',
-            }}
           />
-          <Box
-            sx={{
-              top: 0,
-              left: 0,
-              bottom: 0,
-              right: 0,
-              height: `100%`,
-              position: 'absolute',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
+          <Box className={styles.box}>
             {isError && (
               <Typography
                 variant="caption"
