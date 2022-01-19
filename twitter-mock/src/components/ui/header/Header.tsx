@@ -1,4 +1,4 @@
-import styles from "../layout/layout.module.css";
+import styles from "./header.module.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
