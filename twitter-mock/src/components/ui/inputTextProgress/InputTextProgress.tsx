@@ -18,7 +18,6 @@ export const InputTextProgress: VFC<props> = React.memo(
         <Box sx={{
           position: 'relative',
           display: 'inline-flex',
-          backgroundColor: 'skyblue',
           height: `${size}px`,
           width: `${size}px`
         }}>
