@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+hr {
+  color: darkgray;
+}
+
 * {
   box-sizing: border-box;
 }

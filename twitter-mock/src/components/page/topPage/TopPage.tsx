@@ -9,6 +9,7 @@ export const TopPage: VFC = () => {
   return (
     <MainLayout pageName={pageName}>
       <InputTweet/>
+      <hr/>
       <Timeline/>
     </MainLayout>
   )
