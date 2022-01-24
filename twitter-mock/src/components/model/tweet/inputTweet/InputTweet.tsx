@@ -38,6 +38,7 @@ export const InputTweet: VFC = function InputTweet() {
       createdDate: new Date(),
     }
     dispatch(addTweet(newTweet));
+    setTweet('');
   }
 
   return (
@@ -49,6 +50,7 @@ export const InputTweet: VFC = function InputTweet() {
             placeholder={'What\'s happening?'}
             multiline
             onChange={changeTweetText}
+            value={tweet}
             error={tweet.length > tweetLenLimit}
           />
         </Grid>
