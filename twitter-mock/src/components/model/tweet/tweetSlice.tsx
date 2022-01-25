@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Tweet } from "../../app/types/tweet";
+import { Tweet } from "../../../types/tweet";
 import { AppState } from "../../app/store";
 
 type InitialState = {

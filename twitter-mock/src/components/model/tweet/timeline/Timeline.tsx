@@ -1,6 +1,7 @@
-import { Tweet } from "../../../app/types/tweet";
+import { Tweet } from "../../../../types/tweet";
 import { useSelector } from "react-redux";
 import { tweets } from "../tweetSlice";
+import ShowTweet from "../tweetCard/CardTweet";
 
 // TODO レイアウトをいい感じに整える
 export const Timeline = () => {
@@ -10,11 +11,7 @@ export const Timeline = () => {
       {
         timeline.map((tweet: Tweet, index: number) => {
           return (
-            <div key={index}>
-              {tweet.createdDate.toLocaleString()}<br/>
-              {tweet.user.name} @{tweet.user.userId}<br/>
-              {tweet.contents}
-            </div>
+            <ShowTweet key={index} tweet={tweet}/>
           )
         })
       }

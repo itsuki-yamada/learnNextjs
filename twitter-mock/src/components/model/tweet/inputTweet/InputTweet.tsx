@@ -3,10 +3,10 @@ import { ChangeEvent, useState, VFC } from "react";
 import { InputTextProgress } from "../../../ui/inputTextProgress/InputTextProgress";
 import styles from './inputTweet.module.css';
 import { useDispatch } from "react-redux";
-import { Tweet } from "../../../app/types/tweet";
+import { Tweet } from "../../../../types/tweet";
 import { addTweet } from "../tweetSlice";
 
-const tweetLenLimit = 280;
+const tweetLenLimit = 50;
 
 /**
  * Tweet入力コンポーネント
@@ -29,7 +29,7 @@ export const InputTweet: VFC = function InputTweet() {
     if (tweet.length > tweetLenLimit) return;
     const newTweet: Tweet = {
       user: {
-        userId: '123@',
+        userId: 'test123',
         name: 'itsuki',
         iconImage: '',
       },
